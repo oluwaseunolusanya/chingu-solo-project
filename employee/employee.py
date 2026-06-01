@@ -3,7 +3,8 @@ class Employee:
     SIZE = 0
 
     def __init__(self, name):
-        """Create a new employee and autogenerate their id
+        """
+        Create a new employee and autogenerate their id
         
         Args:
             name(str): Name of the new employee
@@ -20,7 +21,8 @@ class Employee:
 
     @property
     def employee_id(self):
-        """Getter method for employee id
+        """
+        Getter method for employee id
 
         Args:
             None
@@ -33,7 +35,8 @@ class Employee:
     
     @employee_id.deleter
     def employee_id(self):
-        """Remove employee id
+        """
+        Remove employee id
         
         Args:
             None
@@ -49,7 +52,8 @@ class Employee:
     
     @start_date.setter
     def start_date(self, start_date):
-        """Set start date for the new employee
+        """
+        Set start date for the new employee
         
         Args:
             start_date(str): Date of employment commenced
@@ -63,4 +67,27 @@ class Employee:
     @start_date.deleter
     def start_date(self):
         del self.start_date
+
+    
+    @property
+    def role(self):
+        return self._role
+    
+    @role.setter
+    def role(self, position):
+        self._role = position
+
+
+    def __repr__(self):
+        """
+        Print the employee details
+        
+        Args:
+            None
+
+        Return:
+            employee(Employee): Employee object with identifying details
+
+        """
+        return f"Name:\t\t{self.name}\nEmployee Id:\t{self.employee_id}\nRole:\t\t{self.role}"
 
