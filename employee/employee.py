@@ -31,8 +31,17 @@ class Employee:
         """
         return self._employee_id
     
-    @employee_id.setter
-    def employee_id()
+    @employee_id.deleter
+    def employee_id(self):
+        """Remove employee id
+        
+        Args:
+            None
+
+        Return:
+            None
+
+        """
 
     @property
     def start_date(self):
@@ -40,6 +49,15 @@ class Employee:
     
     @start_date.setter
     def start_date(self, start_date):
+        """Set start date for the new employee
+        
+        Args:
+            start_date(str): Date of employment commenced
+
+        Return:
+            None
+        
+        """
         self._start_date = start_date
 
     @start_date.deleter
