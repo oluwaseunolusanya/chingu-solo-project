@@ -1,5 +1,5 @@
 """Module to create an employee account"""
-from employee import Employee
+from employee.employee import Employee
 
 name = input("Name of Employee: ")
 developer_1 = Employee(name)
