@@ -18,6 +18,7 @@ class Employee:
         base_id = "0000000"
         employee_count = str(Employee.SIZE)
         self._employee_id = base_id[len(employee_count):] + employee_count
+        self.role = ""
 
     @property
     def employee_id(self):
@@ -45,6 +46,7 @@ class Employee:
             None
 
         """
+        del self._employee_id
 
     @property
     def start_date(self):
@@ -66,7 +68,7 @@ class Employee:
 
     @start_date.deleter
     def start_date(self):
-        del self.start_date
+        del self._start_date
 
     
     @property
@@ -76,6 +78,10 @@ class Employee:
     @role.setter
     def role(self, position):
         self._role = position
+
+    @role.deleter
+    def role(self):
+        del self._role
 
 
     def __repr__(self):
@@ -89,5 +95,5 @@ class Employee:
             employee(Employee): Employee object with identifying details
 
         """
-        return f"Name:\t\t{self.name}\nEmployee Id:\t{self.employee_id}\nRole:\t\t{self.role}"
+        return f"Name:\t\t{self.name}\nEmployee Id:\t{self.employee_id}\nRole:\t\t{self.role}\nEmployement Started:\t{self.start_date}"
 
