@@ -12,6 +12,7 @@ while add_new_employee == 'y':
     print("\n")
     print(employee,"\n")
     add_new_employee = input("Do you want to add new employee? Enter y or n: ")
+    
 if Employee.SIZE > 1:
     print(f"Created {Employee.SIZE} employee profiles.")
 else:
