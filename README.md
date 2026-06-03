@@ -41,7 +41,7 @@ ls -al
 ## Usage
 1. Run onboarding app by entering _python onboarding.py_ at the prompt
 2. Follow the prompt and enter requested information.
-   https://github.com/oluwaseunolusanya/chingu-solo-project/blob/main/demo-onboarding-app.webm
+   https://github.com/oluwaseunolusanya/chingu-solo-project/blob/main/demo-onboarding-app.mp4
 
 ## License 
 MIT
