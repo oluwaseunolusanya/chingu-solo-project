@@ -41,7 +41,7 @@ ls -al
 ## Usage
 1. Run onboarding app by entering _python onboarding.py_ at the prompt
 2. Follow the prompt and enter requested information.
-   [placeholder]
+   [demo-onboarding-app.webm]
 
 ## License 
 MIT
